@@ -1,0 +1,592 @@
+﻿@charset "utf-8";
+BODY {
+	font-family: "微軟正黑體";
+	font-size: 12px;
+	color: #333;
+	margin:0px;
+	background-color: #222;	
+}
+A{
+	color: #14b2e0;
+	font-weight: bold;
+}
+A:hover{
+	color: #666;
+}
+HR{
+	clear:both;}
+
+
+#ALL{
+	text-align:left;
+}
+#TOP{
+	height:120px;
+	background-image: url(../images/body_01.gif);
+	background-repeat: repeat-x;
+	text-align:center;
+}
+#TOP .week{
+	font-size:60px;
+	color: #FFF;
+	background-image: url(../images/logo_01.gif);
+	background-repeat: no-repeat;
+	padding-top:10px;
+	height:100px;
+}
+#TOP .week P{
+	font-size:14px;
+	padding:0px;
+	margin:0px;
+	color:#14b2e0;
+	font-weight: bold;
+	margin-bottom:10px;
+}
+#TOP .menu{	
+	position:absolute;
+	right:0px;
+	top:90px;
+}
+#TOP .menu A{
+	font-size:14px;
+	background-image: url(../images/body_02.gif);
+	background-repeat: no-repeat;
+	background-position: left top;
+	padding-left:20px;
+	padding-right:20px;
+	height:45px;
+	padding-top:20px;
+	padding-bottom:20px;
+	color: #FFF;
+	text-decoration: none;
+}
+
+#MIDDLE{
+	clear:both;	
+}
+#MIDDLE .info{
+	margin:10px;	
+	background-image: url(../images/info_01.png);
+	background-repeat: no-repeat;
+	background-position: left center;
+	cursor:hand;	
+	position:relative;
+}
+#MIDDLE .info DIV{
+	background-image: url(../images/info_02.png);
+	background-repeat: no-repeat;
+	background-position: right center;	
+}
+#MIDDLE .info P{
+	margin:0px;
+	margin-left:30px;
+	margin-right:15px;
+	padding-top:5px;
+	height:23px;
+	background-color: #FFF;
+	border-top-width: 1px;
+	border-bottom-width: 1px;
+	border-top-style: solid;
+	border-bottom-style: solid;
+	border-top-color: #AAAAAA;
+	border-bottom-color: #AAAAAA;
+}
+
+
+
+#BOTTOM{
+	padding:20px;
+	text-align:center;	
+	background-color:#333333;
+}
+#BOTTOM .copyright{
+	font-size:11px;
+	color:#FFF;
+}
+
+#GAME{
+	height:380px;
+	background-repeat: repeat-x;
+	background-position: center center;
+	text-align: center;
+	overflow:hidden;
+	cursor: move;
+	-moz-user-select:none;
+}
+.scene1{
+	background-image: url(../images/scene_01.gif);
+}
+.scene2{
+	background-image: url(../images/scene_02.gif);
+}
+.scene3{
+	background-image: url(../images/scene_03.gif);
+}
+
+#INFO{
+	padding:20px;
+	margin-top:5px;
+	background-color:#333333;
+	border-top: 1px solid #444444;
+}
+
+#INFO .control{	
+	width:800px;
+}
+#INFO .control .data{
+	width:620px;
+	float:left;
+	padding:10px;	
+}
+#INFO .control .data .state{
+	height:30px;
+	margin-bottom:10px;
+	color:#FFF;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+
+#INFO .control .req{	
+	color: #FFF;
+	width:160px;
+	float:left;
+}
+#INFO .control .req H1{
+	font-size: 20px;
+	font-weight: bold;
+	margin:10px;
+	height:30px;
+}
+#INFO .control .req .input{
+	display:block;
+	width:120px;
+	height:60px;
+	border: 10px solid #666;
+	font-size: 60px;
+	font-weight: bold;
+	font-family: Arial, Helvetica, sans-serif;
+	text-align: center;
+	vertical-align: middle;
+	color: #14b2e0;
+	margin:10px;
+}
+#INFO .control .req .button{
+	display:block;
+	width:140px;
+	height:50px;
+	font-size: 20px;
+	font-weight: bold;
+	font-family: "微軟正黑體";
+	text-align: center;
+	margin:10px;
+	background-image: url(../images/icon_01.gif);
+	background-repeat: no-repeat;
+}
+#INFO .control .req .button:hover{
+	background-image: url(../images/icon_02.gif);
+}
+#INFO .control .req .wait{
+	display:none;
+	width:142px;
+	height:112px;
+	margin:10px;
+	background-image: url(../images/wait.gif);
+	background-position: 0px -15px;
+}
+
+#INFO .control .active .input{
+	display:none;
+}
+#INFO .control .active .wait{
+	display:block;
+}
+#INFO .control .active .button{
+	display:none;
+}
+#INFO .control .active H1{
+	display:none;
+}
+#LIST{
+	overflow:hidden;
+	height:72px;
+}
+#DATA .wait{		
+	background-color: #FFF;
+	background-image: url(../images/loading.gif);
+	background-position: center center;
+	background-repeat: no-repeat;
+	border: 5px solid #222222;
+}
+#DATA .wait table{
+	display:none;
+}
+
+
+
+
+.photo1{
+	width:210px;
+	height:220px;
+	right:10px;
+	top:305px;
+	position:absolute;
+	background-image: url(../images/man_01.png);
+	background-repeat: no-repeat;
+	z-index:99;
+}
+.photo2{
+	width:210px;
+	height:220px;
+	right:10px;
+	top:312px;
+	position:absolute;
+	background-image: url(../images/man_02.png);
+	background-repeat: no-repeat;
+	z-index:99;
+}
+.photo3{
+	width:210px;
+	height:220px;
+	right:10px;
+	top:308px;
+	position:absolute;
+	background-image: url(../images/man_03.png);
+	background-repeat: no-repeat;
+	z-index:99;
+}
+.photo4{
+	width:210px;
+	height:220px;
+	right:10px;
+	top:312px;
+	position:absolute;
+	background-image: url(../images/man_04.png);
+	background-repeat: no-repeat;
+	z-index:99;
+}
+.cover{
+	height:380px;
+	background-color:#FFF;
+	position:absolute;
+	z-index:98;
+	width:100%;
+	top:120px;
+	
+	-moz-opacity: 0;
+	opacity: 0;
+	filter:Alpha(Opacity=0);
+
+	background-image: url(../images/loading.gif);
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+#GAMELINEINFO
+{
+    padding:5px;
+    background-color:#FFF;
+    border:solid 5px #333;
+    
+    z-index:97;
+    position:absolute;
+    font-weight: bolder;
+	color: blue;
+    
+    filter: Alpha(Opacity=80);
+	Opacity:0.8;
+}
+
+
+
+
+
+
+
+.table1{
+	background-color:#555555;
+	background-image: url(../images/table1_07.gif);
+	background-repeat: repeat-y;
+	background-position: right top;
+	color: #FFF;
+}
+.table1 tr{
+	background-image: url(../images/table1_06.gif);
+	background-repeat: repeat-y;
+	background-position: left top;
+}
+.table1 td{
+	padding:5px;
+}
+
+.table1 thead{
+	background-image: url(../images/table1_05.gif);
+	background-repeat: repeat-x;	
+	
+}
+.table1 thead tr{
+	background-image: url(../images/table1_01.gif);
+	background-repeat: no-repeat;
+	background-position: left top;		
+}
+.table1 thead th{
+	background-image: url(../images/table1_02.gif);
+	background-repeat: no-repeat;
+	background-position: right top;
+	font-size: 14px;
+	color: #FFF;
+	padding-top: 8px;
+	height:31px;
+}
+.table1 thead td{
+	background-image: none;
+	background-color: #555;
+}
+
+.table1 tbody{
+	
+	
+}
+.table1 tbody tr{
+	
+}
+.table1 tbody th{
+	background-color:#999;
+	background-image: url(../images/table1_09.gif);
+	background-repeat: repeat-x;
+	background-position: left bottom;
+	padding: 5px;
+	border-left-width: 1px;
+	border-left-style: solid;
+	border-left-color: #333;	
+}
+.table1 tbody td{
+	padding:10px;
+	background-image: url(../images/table1_09.gif);
+	background-repeat: repeat-x;
+	background-position: center bottom;
+}
+
+.table1 tfoot{
+	background-image: url(../images/table1_08.gif);
+	background-repeat: repeat-x;
+	background-position: left bottom;
+}
+.table1 tfoot tr{
+	background-image: url(../images/table1_03.gif);
+	background-repeat: no-repeat;
+	background-position: left bottom;
+}
+.table1 tfoot th{}
+.table1 tfoot td{
+	background-image: url(../images/table1_04.gif);
+	background-repeat: no-repeat;
+	background-position: right bottom;
+	padding-bottom:10px;
+}
+
+.game_table{
+	font-size: 11px;
+	color: #FFF;
+	top:60px;
+	position:relative;		
+}
+
+.game_table td{
+	width:50px;
+}
+
+/*----------------blue----------------*/
+.game_table .timeline_blue td{
+	background-image: url(../images/game_point_b.png);
+	background-position: center center;
+	text-align:center;
+	padding-top:21px;
+	padding-bottom:21px;
+	background-repeat: no-repeat;
+}
+.game_table .timeline_blue .start{
+	background-image: url(../images/game_start_b.png);
+	background-position: 2px 13px;
+	color:#333;
+	font-weight: bold;
+}
+.game_table .timeline_blue .end{
+	background-image: url(../images/game_end_b.png);
+	background-position: 0px 13px;
+	color:#333;
+	font-weight: bold;
+}
+.game_table .timeline_blue .title
+{
+    width:150px;
+    background-image:url(../images/game_title_b.png);
+    background-position:center center;
+    background-repeat:no-repeat;
+}
+
+.game_table .truck_blue td{
+	text-align:left;
+	color:#333;
+	font-weight: bold;
+	padding-top:15px;
+	padding-bottom:22px;
+	padding-left:10px;
+	width:40px;
+}
+.game_table .truck_blue .active{
+	background-image: url(../images/game_truck_b.png);
+	background-repeat: no-repeat;
+	background-position: 3px 12px;
+}
+.game_table .truck_blue .stock{
+	background-image: url(../images/game_stock.png);
+	background-repeat: no-repeat;
+	background-position: 6px 14px;
+	padding-top:25px;
+	padding-bottom:0px;
+	color:#FFF;
+	text-align:center;
+	padding-left:0px;
+}
+
+/*--------------------red---------------------*/
+.game_table .timeline_red td{
+	background-image: url(../images/game_point_r.png);
+	background-position: center center;
+	text-align:center;
+	padding-top:21px;
+	padding-bottom:21px;
+	background-repeat: no-repeat;
+}
+.game_table .timeline_red .start{
+	background-image: url(../images/game_start_r.png);
+	background-position: 2px 13px;
+	color:#333;
+	font-weight: bold;
+}
+.game_table .timeline_red .end{
+	background-image: url(../images/game_end_r.png);
+	background-position: 0px 13px;
+	color:#333;
+	font-weight: bold;
+}
+.game_table .timeline_red .title
+{
+    width:150px;
+    background-image:url(../images/game_title_r.png);
+    background-position:center center;
+    background-repeat:no-repeat;
+}
+
+
+.game_table .truck_red td{
+	text-align:left;
+	color:#333;
+	font-weight: bold;
+	padding-top:15px;
+	padding-bottom:22px;
+	padding-left:10px;
+	width:40px;
+	
+	
+}
+.game_table .truck_red .active{
+	background-image: url(../images/game_truck_r.png);
+	background-repeat: no-repeat;
+	background-position: 3px 12px;
+}
+.game_table .truck_red .stock{
+	background-image: url(../images/game_stock.png);
+	background-repeat: no-repeat;
+	background-position: 6px 14px;
+	padding-top:25px;
+	padding-bottom:0px;
+	color:#FFF;
+	text-align:center;
+	padding-left:0px;
+}
+
+
+
+
+.table2{
+	border-width: 5px;
+	border-style: solid;	
+	border-color: #222222;
+	clear:both;
+}
+.table2 thead td{
+	font-size: 14px;
+	color: #FFF;
+	background-color: #666;
+	text-align: center;
+	font-weight: bold;
+	height:30px;
+}
+.table2 td{
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-bottom-color: #CCC;
+	border-left-color: #CCC;
+	padding:5px;	
+}
+.table2 thead th{
+	background-color: #DDD;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-right-color: #FFF;
+	border-bottom-color: #CCC;
+	border-left-color: #CCC;
+	padding:5px;
+	text-align:center;
+	font-weight: normal;
+	}
+	
+.table2 tbody th{
+	background-color:#DDD;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-style: none;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-right-color: #FFF;
+	border-bottom-color: #CCC;
+	border-left-color: #CCC;
+	padding: 7px;
+}
+.table2 tr {
+	background-color:#FFF;
+}
+.table2 tbody tr:hover{
+	background-color:#EEE;
+}
+.table2 tfoot td{
+	padding:10px;
+}
+.table2 .mark{
+	background-color:#14b2e0;
+	padding:0px;
+}
+.table2 .mark:hover{
+	background-color:#14b2e0;
+}
+
+.table2 .state IMG{
+	vertical-align: middle;
+	margin-left:5px;
+	margin-right:5px;
+}
+
+.div_mark{
+	border:solid 5px #14b2e0;
+}
